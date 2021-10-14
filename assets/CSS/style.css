@@ -1,0 +1,217 @@
+@keyframes pisca {
+    0% {opacity: 0.2;}
+    50% {opacity: 1;}
+    100% {opacity: 0.2;}
+}
+body {
+    background-color: white;
+    color: black;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.urna {
+    background-color: #dbd5c9;
+    height: 400px;
+    width: 800px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.tela {
+    background: linear-gradient(to right, #e8e8e8, #c1c1c1);
+    height: 300px;
+    width: 400px;
+    margin-right: 40px;
+    border: 2px solid #555;
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1 {
+    font-size: 23px;
+}
+
+.side_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logo {
+    height: 40px;
+    width: 260px;
+}
+.numerico {
+    background-color: #403a3a;
+    display: grid;
+    grid-template-columns: repeat(3, 65px);
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.botao {
+    background-color: black;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    box-shadow: 3px 3px 0px #555;
+    cursor: pointer;
+}
+
+.branco {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+    font-size: 15px;
+    background-color: #fff;
+    color: #000;
+}
+
+.corrige {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    font-size: 15px;
+    background-color: #f09046;
+    color: #000;
+}
+
+.confirma {
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+    font-size: 15px;
+    background-color: #48c079;
+    color: #000;
+    width: 80px;
+    height: 45px;
+}
+
+.zero {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+
+.container {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap:10px;
+}
+
+.item {
+    color: white;
+    background-color: black;
+}
+
+
+.t1 {
+    flex: 1;
+    display: flex;
+}
+.t2 {
+    height: 60px;
+    font-size: 14px;
+    padding-left: 5px;
+    border-top: 2px solid #000;
+    display: flex;
+    align-items: center;
+}
+.t1--left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+    
+}
+.t1-1 {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.t1-2 {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.t1-3 {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.numero{
+    border: 1px solid #000;
+    margin-right: 5px;
+    margin-left: 5x;
+    height: 40px;
+    width: 30px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+
+}
+
+.pisca {
+    animation-name: pisca;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.t1-4 {
+    flex: 1;
+    line-height: 25px;
+}
+
+
+.t1--right {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.t1-image {
+    background-color: #fff;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 15px;
+}
+.t1-image img {
+    width: 100%;
+}
+.t1-image.small {
+    width: 85%;
+    font-size: 11px;
+    
+}
+
+
+.aviso--grande {
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.aviso--gigante {
+    font-size: 70px;
+    font-weight: bold;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
